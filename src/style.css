@@ -1,91 +1,92 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
-
 body {
-    background-color: #0e7e12;
-    margin: 10px;
+  background-color: #0e7e12;
+  margin: 10px;
 }
 
 h1 {
-    margin: 10px;
-    padding: 20px;
-    margin: auto;
-    text-align: center;
+  margin: 10px;
+  padding: 20px;
+  margin: auto;
+  text-align: center;
 }
 
 .card {
-    height: 640px;
-    width: 448px;
-    margin: auto;
-    margin-top: 5px;
-    background-color: white;
-    border-radius: 25px;
-    border: 1px solid black;
-    position: relative;
+  height: 640px;
+  width: 448px;
+  margin: auto;
+  margin-top: 5px;
+  background-color: white;
+  border-radius: 25px;
+  border: 1px solid black;
+  position: relative;
 }
 
-.top {
-    display: flex;
+.card .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.bottom {
-    display: flex;
-
+.card .top .top-suite {
+  position: absolute;
+  top: 55px;
+  left: -2px;
+  font-size: 90px;
+  padding: 20px;
 }
 
-.top-suite {
-    position: absolute;
-    top: 70px;
-    left: 8px;
-    font-size: 90px;
-    padding: 20px;
+.card .top .top-suite-number {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  font-size: 80px;
+  padding: 2px;
 }
 
-.top-suite-number {
-    position: absolute;
-    top: 25px;
-    left: 15px;
-    font-size: 80px;
-    padding: 2px;
+.card .middle {
+  border: 1px solid black;
+  height: 470px;
+  width: 260px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -240px 0 0 -135px;
 }
 
-.bottom-suite {
-    position: absolute;
-    bottom: 85px;
-    right: 35px;
-    font-size: 75px;
-    transform: rotateX(180deg);
-    padding: 2px;
+.card .middle #number {
+  font-size: 120px;
+  width: 50px;
+  height: 50px;
+  /* Center vertically and horizontally */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -75px 0 0 -50px;
 }
 
-.bottom-suite-number {
-    position: absolute;
-    bottom: 35px;
-    right: 35px;
-    font-size: 75px;
-    transform: rotateX(180deg) rotateY(180deg);
-    padding: 2px;
+.card .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.number {
-    font-size: 120px;
-    width: 50px;
-    height: 50px;
-    background-color: red;
-    /* Center vertically and horizontally */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -25px 0 0 -25px;
+.card .bottom .bottom-suite {
+  position: absolute;
+  bottom: 80px;
+  right: 20px;
+  font-size: 90px;
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+  padding: 2px;
 }
 
-#number {
-    font-size: 120px;
-    width: 50px;
-    height: 50px;
-    background-color: red;
-    /* Center vertically and horizontally */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -75px 0 0 -25px;
+.card .bottom .bottom-suite-number {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 80px;
+  -webkit-transform: rotateX(180deg) rotateY(180deg);
+          transform: rotateX(180deg) rotateY(180deg);
+  padding: 2px;
 }
+/*# sourceMappingURL=style.css.map */

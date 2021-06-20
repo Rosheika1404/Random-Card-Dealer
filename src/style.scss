@@ -1,0 +1,102 @@
+body {
+    background-color: #0e7e12;
+    margin: 10px;
+}
+
+h1 {
+    margin: 10px;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+}
+
+.card {
+    height: 640px;
+    width: 448px;
+    margin: auto;
+    margin-top: 5px;
+    background-color: white;
+    border-radius: 25px;
+    border: 1px solid black;
+    position: relative;
+
+    .top {
+        display: flex;
+
+        .top-suite {
+            position: absolute;
+            top: 55px;
+            left: -2px;
+            font-size: 90px;
+            padding: 20px;
+        }
+
+        .top-suite-number {
+            position: absolute;
+            top: 10px;
+            left: 15px;
+            font-size: 80px;
+            padding: 2px;
+        }
+    }
+
+    .middle {
+        border: 1px solid black;
+        height: 470px;
+        width: 260px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -240px 0 0 -135px;
+
+        // .number {
+        //     font-size: 120px;
+        //     width: 50px;
+        //     height: 50px;
+        //     background-color: red;
+        //     /* Center vertically and horizontally */
+        //     position: absolute;
+        //     top: 50%;
+        //     left: 50%;
+        //     margin: -25px 0 0 -25px;
+        // }
+
+        #number {
+            font-size: 120px;
+            width: 50px;
+            height: 50px;
+
+            /* Center vertically and horizontally */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -75px 0 0 -50px;
+        }
+    }
+
+    .bottom {
+        display: flex;
+
+        .bottom-suite {
+            position: absolute;
+            bottom: 80px;
+            right: 20px;
+            font-size: 90px;
+            transform: rotateX(180deg);
+            padding: 2px;
+        }
+
+        .bottom-suite-number {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            font-size: 80px;
+            transform: rotateX(180deg) rotateY(180deg);
+            padding: 2px;
+        }
+
+    }
+
+    
+
+}
