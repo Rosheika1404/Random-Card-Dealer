@@ -1,13 +1,8 @@
 body {
+  margin: 0;
   background-color: #0e7e12;
-  margin: 10px;
-}
-
-h1 {
-  margin: 10px;
-  padding: 20px;
-  margin: auto;
-  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .card {
@@ -21,72 +16,58 @@ h1 {
   position: relative;
 }
 
-.card .top {
+.card .middle {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 100px;
+  border: 1px solid black;
+  height: 420px;
+  width: 240px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -220px 0 0 -120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.card .top .top-suite {
-  position: absolute;
-  top: 55px;
-  left: -2px;
-  font-size: 90px;
-  padding: 20px;
-}
-
-.card .top .top-suite-number {
+.card::before {
   position: absolute;
   top: 10px;
-  left: 15px;
-  font-size: 80px;
-  padding: 2px;
-}
-
-.card .middle {
-  border: 1px solid black;
-  height: 470px;
-  width: 260px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -240px 0 0 -135px;
-}
-
-.card .middle #number {
+  left: 20px;
   font-size: 120px;
-  width: 50px;
-  height: 50px;
-  /* Center vertically and horizontally */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -75px 0 0 -50px;
 }
 
-.card .bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.card .bottom .bottom-suite {
+.card::after {
   position: absolute;
-  bottom: 80px;
+  bottom: 10px;
   right: 20px;
-  font-size: 90px;
-  -webkit-transform: rotateX(180deg);
-          transform: rotateX(180deg);
-  padding: 2px;
+  font-size: 120px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
-.card .bottom .bottom-suite-number {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  font-size: 80px;
-  -webkit-transform: rotateX(180deg) rotateY(180deg);
-          transform: rotateX(180deg) rotateY(180deg);
-  padding: 2px;
+.card.spades:before, .card.spades:after {
+  content: '\2660';
+}
+
+.card.clubs:before, .card.clubs:after {
+  content: '\2663';
+}
+
+.card.hearts:before, .card.hearts:after {
+  content: '\2665';
+  color: red;
+}
+
+.card.diamonds:before, .card.diamonds:after {
+  content: '\2666';
+  color: red;
 }
 /*# sourceMappingURL=style.css.map */
