@@ -1,5 +1,10 @@
+windowonload = function () {
+  document.querySelectorAll(".suite").innerHTML = generateSuite();
+  document.querySelectorAll(".value, middle").innerHTML = generateDeck();
+};
+
 //generate Deck values
-let generateDeck = () => {
+function generateDeck() {
   const values = [
     "A",
     "2",
@@ -15,19 +20,36 @@ let generateDeck = () => {
     "Q",
     "K"
   ];
+
   let getRandomNumber = max => Math.floor(Math.random() * max); // function to generate random number
-
-  return values[getRandomNumber(values.length)];
+  let value = values[getRandomNumber(values.length)];
+  return value
 };
-generateDeck();
 
-// Generate deck suites
-let generateSuite = () => {
-  const suite = ["♥", "♦", "♠", "♣"];
-  let getRandomNumber = max => Math.floor(Math.random() * max); // function to generate random number
 
-  return suite[getRandomNumber(suite.length)];
-};
-generateSuite();
+// // Generate deck suites
+// function generateSuite() {
+//   const suite = ["♥", "♦", "♠", "♣"];
+//   let getRandomNumber = max => Math.floor(Math.random() * max); // function to generate random number
+//   let suit = suite[getRandomNumber(suite.length)];
+//   return suit
 
-//   const suite = ["♥", "♦", "♠", "♣"]
+//   function suiteColor(suit) {
+//     let color = red;
+//     if (suit ==="♥" || suit === "♦") {
+//       document.querySelectorAll(".suite").style.color = "red";
+//     }
+//   }
+
+//   let suiteValue = 
+//   suiteColor(suiteValue)
+//   document.querySelectorAll('').innerHTML=suiteColor;
+// };
+
+
+
+
+
+console.log(generateDeck(), generateSuite());
+
+ 
