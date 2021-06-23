@@ -27,7 +27,6 @@ body {
         left: 50%;
         margin: -220px 0 0 -120px;
         display: flex;
-
     }
 
     &::before {
@@ -45,25 +44,25 @@ body {
         transform: rotate(180deg);
     }
 
-    &.spades:before,
-    &.spades:after {
-        content: '\2660';
-    }
+    // &.spades:before,
+    // &.spades:after {
+    //     content: '\2660';
+    // }
 
-    &.clubs:before,
-    &.clubs:after {
-        content: '\2663';
-    }
+    // &.clubs:before,
+    // &.clubs:after {
+    //     content: '\2663';
+    // }
 
-    &.hearts:before,
-    &.hearts:after {
-        content: '\2665';
-        color: red;
-    }
+    // &.hearts:before,
+    // &.hearts:after {
+    //     content: '\2665';
+    //     color: red;
+    // }
 
-    &.diamonds:before,
-    &.diamonds:after {
-        content: '\2666';
-        color: red;
-    }
+    // &.diamonds:before,
+    // &.diamonds:after {
+    //     content: '\2666';
+    //     color: red;
+    // }
 }
